@@ -1,0 +1,96 @@
+* {
+    -fx-tableau: WHITE;
+    -fx-texte: WHITE;
+    -fx-bouton-normal: #5465ff;
+    -fx-bouton-hover: #788bff;
+    -fx-bouton-pressed: #072ac8;
+    -fx-texte-fonce: #172B4D;
+}
+
+.scroll-pane{
+    -fx-background-color:transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.titre {
+    -fx-text-fill: -fx-texte-fonce;
+}
+
+.bouton{
+    -fx-background-color: -fx-bouton-normal;
+    -fx-text-fill: -fx-texte;
+}
+
+.bouton:hover{
+    -fx-background-color: -fx-bouton-hover;
+    -fx-text-fill: -fx-texte;
+}
+
+.bouton:pressed{
+    -fx-background-color: -fx-bouton-pressed;
+    -fx-text-fill: -fx-texte;
+}
+
+.vTab{
+    -fx-background-color: -fx-tableau;
+    -fx-border-width: 0 1.5 0 0;
+    -fx-border-color: #5465ff;
+}
+
+.pane{
+    -fx-background-color: white;
+}
+
+.textfield{
+    -fx-background-color: -fx-tableau;
+    -fx-border-width: 1.5;
+    -fx-border-color: rgba(10,10,10,0.2);
+    -fx-border-radius: 3px;
+    -fx-text-fill: -fx-texte-fonce;
+}
+
+#bar{
+    -fx-border-width: 0 0 1.5 0;
+    -fx-border-color: #5465ff;
+}
+
+.textarea .content{
+    -fx-background-color: white;
+    -fx-border-width: 1;
+    -fx-border-color: rgba(10,10,10,0.2);
+    -fx-text-fill: -fx-texte-fonce;
+}
+
+.texte{
+    -fx-text-fill: -fx-texte;
+}
+
+#txt{
+    -fx-text-fill: black;
+}
+
+#menu {
+    -fx-background-color: transparent;
+}
+
+#menuOptions .label{
+    -fx-font-weight: bold;
+}
+
+#menuOptions{
+    -fx-selection-bar: -fx-bouton-normal;
+    -fx-background-radius: 15;
+}
+
+#menuOptions:hover{
+    -fx-selection-bar: -fx-bouton-normal;
+    -fx-background-color: -fx-bouton-normal;
+}
+
+#menuOptions:focused{
+    -fx-background-color: -fx-bouton-normal;
+}
