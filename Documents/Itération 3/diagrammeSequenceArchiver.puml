@@ -1,0 +1,30 @@
+@startuml
+
+participant Utilisateur as util
+participant       ControleurArchiver     as control
+participant    ModeleTrello       as mod
+participant     Archive       as arch
+
+activate util
+util -> control : Appuie sur archiver
+activate control
+control -> mod : getTabSelectionne()
+activate mod
+mod --> control : Tableau
+control -> mod : getListes()
+mod --> control : Liste
+control -> mod : remove(this.liste)
+mod --> control
+control -> mod : archiverListe(this.liste)
+mod -> arch : archiverListe(l)
+activate arch
+arch -> arch : ajout dans sa Liste
+arch --> mod
+deactivate arch
+mod -> mod : notifierObservateur()
+mod --> control
+deactivate mod
+deactivate control
+control --> util
+deactivate util
+@enduml

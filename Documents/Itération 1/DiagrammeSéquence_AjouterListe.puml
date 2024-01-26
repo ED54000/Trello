@@ -1,0 +1,27 @@
+@startuml 
+title Ajouter une liste 
+
+participant "button:Button" as button
+participant "tableau:Tableau" as tableau
+participant "liste:Liste" as liste
+participant "vueListe:VueListe" as vueListe  
+
+ [->button:handle()
+ activate button
+ button -> liste:new Liste()
+ deactivate button
+ activate liste
+ 
+ liste -> tableau:ajouterListe()
+ deactivate liste
+ activate tableau
+
+tableau -> tableau:notifierObservateur()
+
+tableau -> vueListe: actualiser()
+deactivate tableau
+activate vueListe
+
+<-- vueListe:Renvoie un affichage avec une nouvelle liste 
+
+@enduml

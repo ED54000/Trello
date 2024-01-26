@@ -1,0 +1,46 @@
+@startuml
+participant "Utilisateur" as u
+participant "bouton : Button" as b
+participant "controleurCharger : ControleurCharger" as c
+participant "modele : ModelleTrello" as m
+participant "modeleChargé : ModelleTrello" as m2
+participant "ois : ObjectInputStreamReader" as ois
+
+activate u 
+u -> b  : cliquer()
+activate b
+b -> c : handler(ActionEvent)
+activate c
+c -> m : charger()
+activate m
+create ois
+m -> ois : new ObjectInputStreamReader(InputStream)
+m -> ois : readObject(ModeleTrello)
+create m2
+activate ois
+ois -> m2 : create modeleChargé
+deactivate ois
+m -> m2 : getTableaux()
+activate m2 
+m <-- m2 : copie des valeurs
+deactivate m2
+m -> m2 : getArchive()
+activate m2 
+m <-- m2 : copie des valeurs
+deactivate m2
+m -> m2 : getTabSelectionne()
+activate m2 
+m <-- m2 : copie des valeurs
+deactivate m2
+deactivate ois
+m -> m : notifierObservateurs()
+c <-- m
+deactivate m
+b <-- c
+deactivate c
+u <-- b
+deactivate b
+<-- u 
+deactivate u
+
+@enduml

@@ -1,0 +1,26 @@
+Ajout du diagramme de Gantt, par Thomas Charpentier
+    Critères de validations :
+    - Le diagramme de Gantt est bien affiché
+    - Les tâches sont bien affichées sur le diagramme de Gantt
+    - La date de début et de fin des tâches sont bien les dates les plus petites et plus grandes
+    - Les tâches qui sont sur la même périodes s'affichent bien en dessous des autres
+
+Ajout du fait de pouvoir changer la date d'une tâche, par Eloi Duchene
+    Critères de validations :
+    - La date de la tâche est modifiée
+    - La date de la tâche est bien modifiée dans le diagramme de Gantt
+
+Ajout du fait de pouvoir masquer liste / tâche , par Eloi Duchene
+    Critères de validations :
+    - La liste est bien masqué et les tâches ne sont plus visibles
+    - On peut dérouler la liste à nouveaux
+    - Les dates des tâches sont masquer
+    - Les dates des tâches sont de nouveaux visibles
+
+Réglage de l'archive (maintenant le modèle gère l'archivage et le désarchivage), par Alexis Zott
+    Critères de validations :
+    - Les tâches sont bien archivées
+    - Les tâches sont bien désarchivées
+    - Les listes sont bien archivées
+    - Les listes sont bien désarchivées
+    - C'est bien le modèle qui gère l'archivage et le désarchivage

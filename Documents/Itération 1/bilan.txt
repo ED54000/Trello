@@ -1,0 +1,6 @@
+* Nos priorités durant cette itération était de pouvoir au minimum ajouter une liste, une grande réflexion a été effectuée sur l'affichage graphique du tableau.
+
+* Dans cette itération, nous avons réussi à faire les fonctionnalités pour ajouter une liste et une tâche et pouvoir leur donner un nom. Nous avons aussi trouvé un affichage graphique initial afin de pouvoir présenter une première démo sur cette itération.
+
+* Nous avons rencontré différentes difficultés sur l'élaboration du modèle d'architecture MVC, mais nous avons trouvé une solution.
+

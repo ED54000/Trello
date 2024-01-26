@@ -1,0 +1,12 @@
+* Ajouter une tâche, fait par Alexis Zott
+	Critères de validation : 
+	- Choisir le nom de la tâche
+	- Apparaitre dans la liste souhaité
+	- Avoir un alignement correct
+
+* Ajouter une liste, fait par Thomas Charpentier et Baptiste Besoin
+	Critères de validation : 
+	- Choisir le nom de la liste
+	- Avoir un alignement correct
+
+(Classe de tests ont été faites par Eloi Duchêne)

@@ -1,0 +1,12 @@
+Objectifs de l'itération 6 :
+- Transformer le diagramme de Gantt actuelle en une vue afin que ce dernier se mette à jour lorsque l'utilisateur ajoute des tâches
+- Ecrire la JavaDoc
+- Commenter le code pour le rendre plus compréhensible
+- Vérifier que nous appliquons bien les normes de nomages de variables
+- Résoudre les derniers bugs présent dans l'application
+
+Difficultés rencontrées :
+- 
+
+Validation :
+- 

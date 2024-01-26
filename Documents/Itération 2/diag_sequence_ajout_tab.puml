@@ -1,0 +1,33 @@
+@startuml
+participant "Utilisateur" as u
+participant "txf : TextField" as t
+participant "controleurAjouterTableau : Controleur" as c
+participant "modele : ModelleTrello" as m
+participant "tableaux : ArrayList<Tableau>" as l
+participant "vueTableau : VueTableau" as v
+
+activate u
+u -> t : appuyerSurEntrée()
+activate t
+t -> c : handler(ActionEvent)
+activate c
+c -> m : ajouterTableau(Tableau)
+activate m
+m -> l : add(Tableau)
+activate l
+m <-- l
+deactivate l
+m -> m : notifierObservateurs()
+v <-- m : actualiser(ModeleTrello)
+activate v
+m <-- v : modification de l'interface graphique
+deactivate v
+c <-- m
+deactivate m
+t <-- c
+t -> t : setText("") 
+deactivate c
+u <-- t
+deactivate t
+deactivate u
+@enduml

@@ -1,0 +1,45 @@
+@startuml
+title "Drag And Drop pour une tache avec les listes"
+
+participant "l : Label" as l
+-> l  : handle(MouseEvent)
+participant "colFinal : ColonneListe" as cl2
+participant "colInitial : ColonneListe" as cl1
+
+participant "listeInitial : Liste" as li1
+participant "listeFinal : Liste" as li2
+
+activate l
+
+l->cl2 : handle(DragEvent)
+activate cl2
+cl2 -> l : getParent()
+activate l
+l --> cl2 : colInitial
+deactivate l
+cl2 -> l : getTache()
+activate l
+l --> cl2 : tache
+deactivate l
+cl2 -> cl1 : getListe()
+activate cl1
+cl1 --> cl2 : listeInitial
+deactivate cl1
+cl2->li1 : supprimerTache(tache)
+activate li1
+li1-->cl2
+deactivate li1
+cl2 -> cl2 : getListe()
+activate cl2
+cl2 --> cl2: listeFinal
+deactivate cl2
+cl2 -> li2 : ajouterTache(tache)
+activate li2
+li2 --> cl2
+deactivate li2
+
+cl2 --> l
+deactivate cl2
+<-- l
+deactivate l
+@enduml

@@ -1,0 +1,18 @@
+Ajouter un tableau, fait par Baptiste Besoin 
+	Critères de validation :
+	- Choix du nom du tableau
+	- Ajout du tableau graphiquement
+	- Le tableau sauvegarde les données lui appartenant
+
+Modifier le nom d'une tâche ou d'une liste, fait par Eloi Duchêne et Alexis Zott
+	Critères de validation :
+	- Un bouton permet à l'utilisateur de changer le nom d'une liste ou d'une tâche 
+	- Une popup apparaît pour modifier le nom
+	- Si le nom entré est vide ou si l'utilisateur ferme la fenêtre, le nom n'est pas changé
+
+Changement de couleurs, fait par Alexis Zott
+	Critères de validation :
+	- Un menu déroulant existe proposant une liste de couleurs
+	- Lorsque l'utilisateur clique sur un des boutons, la couleur de la liste change
+
+(Les classes de tests ont été faites par Eloi Duchêne)

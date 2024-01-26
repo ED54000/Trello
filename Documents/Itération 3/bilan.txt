@@ -1,0 +1,16 @@
+Objectifs de l'itération 3 :
+- Implémentation de la fonctionnalité Drag-and-Drop
+- Implémentation de la fonctionnalité d'archivage d'une liste
+- Implémentation d'une Barre de défilement pour les listes
+- Implémentation de la fonctionnalité sauvegarder notre projet sous forme de fichier
+
+Difficultés :
+L'implémentation du Drag-and-Drop a été compliquée car elle s'est étalée sur 2 itérations pour pouvoir être réalisée.
+Cela a aussi été difficile car cela utilisait des fonctionnalités de JavaFX que nous ne connaissions pas. Nous avons donc dû comprendre comment cela fonctionnait.
+L'archivage nous a posé aussi quelques petits soucis, nous avons donc dû refaire une partie de notre interface graphique pour l'adapter à notre nouveau modèle.
+Et il n'est pas totalement implémenté, pour l'instant, nous pouvons uniquement archiver les listes, pas les tâches.
+La barre de défilement, pour pouvoir naviguer quand on a beaucoup de listes, nous a également posé quelques petits soucis car nous avons dû revoir notre graphe de scène pour pouvoir l'implémenter.
+
+Validation :
+Tous les objectifs mentionnés au dessus ont été validés.
+Ceux n'étant pas liés à l'interface graphique ont pu être validés avec des tests JUnit, tandis que les autres ont été vérifiés visuellement.

@@ -1,0 +1,39 @@
+@startuml
+
+title "TreeView : Tâche étendable"
+participant "TreeView : vueTache" as tv
+participant "ComposantTache : ctInitial" as ct1
+participant "TreeItem : treeInitial" as ti1
+participant "ComposantTache : ctIteration" as ctI
+participant "TreeItem : treeIteration" as tiI
+
+-> tv : new(ctInitial.genererArbreTache())
+activate tv
+tv -> ct1 : genererArbreTache()
+activate ct1
+create ti1
+ct1-> ti1 : new(ctInitial)
+alt instanceof TacheMere
+loop sur l'ensemble des sous taches
+end
+ct1 -> ctI : getSousTaches(i)
+activate ctI
+ctI->tiI : genererArbreTache()
+note right : récursif sur genererArbreTache() (2ème flèche)
+activate tiI
+tiI --> ctI
+deactivate tiI
+ctI --> ct1 : TreeItem : ti
+deactivate ctI
+ct1 -> ti1 : getChildren.add(ti)
+activate ti1
+ti1 --> ct1
+deactivate ti1
+end
+ct1 --> tv : treeInitial
+deactivate ct1
+<-- tv : treeView
+deactivate tv
+
+
+@enduml

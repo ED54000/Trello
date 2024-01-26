@@ -1,0 +1,27 @@
+Drag-and-Drop, fait par Thomas Charpentier
+	Critères de validation :
+	- Déplacement au niveau back-end et front-end
+	- Déplacement d'une tâche d'une liste à une autre
+	- Le déplacement d'une tâche dans une liste vide
+	- Le déplacement d'une tâche dans une liste non vide
+
+Archivage, fait par Alexis Zott
+	Critères de validation :
+	- Un bouton dans un menu permet à l'utilisateur de d'archiver la liste
+	- La liste est déplacée dans une autre list de la classe Archive
+	- La liste est bien supprimer de la list du tableau selectionner
+	- On à un moyen de visualiser les archives
+	- On peut pas modifier, supprimer ou déplacer une liste archivée
+	- On ne peut pas ajouter de tâche dans une liste archivée
+
+Barre de défilement, fait par Eloi Duchêne
+	Critères de validation :
+	- La barre de défilement est présente
+	- La barre de défilement est fonctionnelle
+
+Sauvegarder, fait par Baptiste Besoin
+	Critères de validation :
+	- Les données sont sauvegardées dans un fichier binaire
+	- On recupère bien le fichier binaire
+
+(Les classes de tests ont été faites par Baptiste Besoin)

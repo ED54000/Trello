@@ -1,0 +1,41 @@
+Tâches étendables par le biais de treeview, fait par Thomas Charpentier
+	Critères de validation :
+	- Pouvoir étendre les sous tâches
+	- Pouvoir ranger les sous tâches
+
+Ajout de sous tâches, fait par Thomas Charpentier
+	Critères de validation :
+	- Pouvoir ajouter une sous tache
+	- Pouvoir ajouter une sous tache à une autre sous tache
+	- Pouvoir éditer les sous taches.
+
+Ajout de la fonctionnalité de passer de la vue de bureau à la vue de liste, fait par Eloi Duchêne
+	Critères de validation :
+	- L'affichage est changé
+
+Ajout d'un darkMode, partie graphique , fait pas Alexis Zott
+    Critère de validation :
+    - Le darkMode est activable et désactivable
+    - Le darkMode est activé par défaut
+    - Le darkMode est sauvegardé
+    - Avoir une bonne UX
+
+Ajout du désarchivage d'une tâche et d'une liste, fait par Alexis Zott
+    Critères de validation :
+    - Une tâche désarchivée est suprimée de l'archive, et réapparait dans la bonne liste
+    - Une liste désarchivée est suprimé de l'archive, et réapparait dans le bon tableau
+    - On ne peux pas désarchiver une tâche ou une liste qui n'est pas archivée
+    - On ne peux pas désarchiver une tâche si sa liste est archivée.
+
+Ajout des dates, fait par Eloi Duchêne
+	Critères de validation :
+	- La date est mininum aujourd'hui
+	- La date de fin ne peut pas être nulle
+
+Ajout de la sauvegarde d'un modèle, fait par Baptiste Besoin
+	Critères de validation :
+	- Un modèle sauvegardé est présent dans un fichier binaire
+
+Ajout du chargement d'un modèle, fait par Baptiste Besoin
+	Critères de validation :
+	- Un utilisateur peut charger un modèle à partir d'un fichier binaire

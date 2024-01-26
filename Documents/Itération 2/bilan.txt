@@ -1,0 +1,17 @@
+Objectifs de l'itération 2 :
+- Possibilité de créer un ou plusieurs tableaux, chacun sauvegardant leurs listes et tâches correspondantes
+- Renommer une tâche ou une liste
+- Modification de l'interface graphique, ajout de style (CSS)
+- Réarrangement des classes afin d'implémenter la classe Tableau (le modèle dans l'itération précédente)
+- Création de contrôleurs pour gérer les nouvelles fonctionnalités
+- Adaptation des vues pour les nouveaux éléments
+- Modification de la classe VueTableau
+- Prototypage de la fonctionnalité Drag-and-Drop
+
+Difficultés :
+Réaliser la refonte de notre modèle a causé des changements pour la plupart des classes. Nous aurions pu éviter cette situation si nous avions pensé à cette façon d'implémenter lors de la première itération.
+Le Drag-and-Drop est compliqué à implémenter et prendra plusieurs itérations.
+Nous avons rencontré des bugs tout au long de l'itération 2 qui nous ont fait perdre un peu de temps mais que nous avons réussi à résoudre avant la fin de l'itération.
+
+Validation 
+Tous les objectifs mentionnés au dessus ont été validés. Ceux n'étant pas liés à l'interface graphique ont pu être validés avec des tests JUnit, tandis que les autres ont été vérifiés visuellement.

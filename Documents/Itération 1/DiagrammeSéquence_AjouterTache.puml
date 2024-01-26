@@ -1,0 +1,34 @@
+@startuml 
+title Ajouter une tache 
+
+participant "button:Button" as button
+participant "composantTache:ComposantTache" as composantTache
+participant "tache:Tache" as tache
+
+participant "liste:Liste" as liste
+participant "vueListe:VueListe" as vueListe
+
+ [->button:handle()
+ activate button
+ button -> tache:new Tache()
+ deactivate button
+ activate tache
+
+tache->composantTache:super()
+deactivate tache
+activate composantTache
+
+ 
+ composantTache -> liste:ajouterTache()
+ deactivate composantTache
+ activate liste
+
+liste -> liste:notifierObservateur()
+
+liste -> vueListe: actualiser()
+deactivate liste
+activate vueListe
+
+<-- vueListe:Renvoie un affichage avec une nouvelle tache 
+deactivate vueListe
+@enduml

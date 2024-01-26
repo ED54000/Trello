@@ -1,0 +1,37 @@
+    @startuml 
+    title Changer la couleur d'une liste
+
+    participant "button:Button" as button
+    participant "ControleurModifierCouleur" as controle
+    participant "liste:Liste" as liste
+    participant "vueListe:VueListe" as vueListe  
+
+
+    [->button:presse()
+    activate button
+    button -> controle:handle()
+    deactivate button
+    activate controle
+
+    controle->liste:setCouleur()
+    deactivate controle
+    activate liste
+
+    
+    liste-->controle
+    deactivate liste
+    activate controle
+    controle ->vueListe:notifierObservateur()
+    deactivate controle
+    activate vueListe
+    vueListe-> vueListe: actualiser()
+    deactivate liste
+    
+    vueListe->liste:getCouleur()
+    activate liste
+    liste-->vueListe:couleur
+    deactivate liste
+
+    <-- vueListe:Renvoie une liste avec la couleur choisie 
+    deactivate vueListe
+    @enduml

@@ -1,0 +1,34 @@
+@startuml
+
+participant Utilisateur as util
+participant       ControleurArchiver     as control
+participant    ModeleTrello       as mod
+participant     Archive       as arch
+participant     Tache       as t
+
+activate util
+util -> control : Appuie sur archiver
+activate control
+control -> mod : archiverTache(Tache t)
+activate mod
+mod -> arch : archiverTache(Tache t)
+activate arch
+arch -> arch : Ajout dans la liste d'archive des taches
+arch --> mod
+deactivate arch
+mod -> t : setIsArchive()
+activate t
+t -> t : isArchive = true
+t --> mod
+deactivate t
+loop Liste du tabSelectionner
+   mod -> mod: getTaches().remove(t)
+end
+mod -> mod : notifierObservateur()
+mod --> control
+deactivate mod
+control --> util
+deactivate control
+
+deactivate util
+@enduml

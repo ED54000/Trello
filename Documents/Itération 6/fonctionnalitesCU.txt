@@ -1,0 +1,6 @@
+Transformation du diagramme de Gantt en Vue, fait par Baptiste Besoin et Eloi Duchene
+  Critères de validation :
+	- Le diagramme de Gantt est mis à jour lorsque l'utilisateur ajoute une tâche
+	- L'ajout d'une liste met à jour le diagramme de Gantt
+	- Une modification quel qu'elle soit d'une tâche ou d'une liste (renommage, changement de dates, etc.)
+	- Une tâche urgente s'affiche en rouge et une non urgente en bleu

@@ -1,0 +1,11 @@
+Objectifs de l'itération 5 :
+- Génération d'un diagramme de Gantt
+- Masquer des tâches et des listes
+- Changer les dates d'une tâche
+- Corrections du comportement des contrôleurs qui modifient les données à la place du modèle
+
+Difficultés :
+- Pour le moment, le diagramme de Gantt n'est pas une Vue car nous avons pris plus de temps pour réaliser son bon fonctionnement
+
+Validation :
+Nous avons seulement implémenter des fonctionnalités concernant l'interface graphique donc la réalisation de tests n'étaient pas possible.

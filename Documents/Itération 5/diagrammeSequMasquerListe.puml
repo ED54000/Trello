@@ -1,0 +1,27 @@
+    @startuml 
+    title Masquer une liste 
+
+    participant "util:Utilisateur" as util
+    participant "vueListe:VueListe" as vueListe  
+    participant "controleurMasquer:ControleurMasquer" as controleurMasquer
+    
+
+    activate util
+    util->vueListe : Masquer une liste
+    activate vueListe
+
+    vueListe->controleurMasquer : handle
+    
+    activate controleurMasquer
+
+    controleurMasquer->controleurMasquer : masquer
+    controleurMasquer->controleurMasquer : notifierObservateurs
+
+    controleurMasquer-->vueListe
+    deactivate controleurMasquer
+    vueListe-->util : modifie l'affichage 
+    deactivate vueListe
+
+
+
+    @enduml

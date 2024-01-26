@@ -1,0 +1,30 @@
+@startuml
+participant "Utilisateur" as u
+participant "bouton : Button" as b
+participant "controleurSauvegarder : ControleurSauvegarder" as c
+participant "modele : ModelleTrello" as m
+participant "oos : ObjectOutputStreamReader" as oos
+
+activate u 
+u -> b  : cliquer()
+activate b
+b -> c : handler(ActionEvent)
+activate c
+c -> m : sauvegarder()
+activate m
+create oos
+m -> oos : new ObjectOutputStreamReader(OutputStream)
+m -> oos : writeObject(ModeleTrello)
+activate oos
+m <-- oos : création d'un fichier binaire
+deactivate oos
+c <-- m
+deactivate m
+b <-- c
+deactivate c
+u <-- b
+deactivate b
+<-- u 
+deactivate u
+
+@enduml

@@ -1,0 +1,16 @@
+Objectifs de l'itération 4 :
+- Implémentation de la fonctionnalité du diagramme de Gantt 
+- Implémentation de la fonctionnalité de désarchivage d'une liste et d'une tâche
+- Mise à jour de la barre de défilement pour les listes
+- Implémentation de la fonctionnalité de chargement de notre projet.
+- Implémentation de la vue détaillée
+- Implémentation de la fonctionnalité d'ajout de sous-tâches
+- Implémentation de la fonctionnalité d'ajout de dates pour les tâches 
+
+Difficultés :
+	Les difficultés rencontrés pour les dates sont de créer une pop-up avec des éléments pour choisir des dates. Nous avons donc créé une nouvelle scène avec des datePickers. Nous en retiendrons que la création et  l'utilisation d'une nouvelle scène est assez simplifiée.
+
+	Les difficultés rencontrés pour les sous-tâches, étaient en majorité dû au modèle Composite, il fallait pouvoir changer le type d'un object, tout en gardant sa référence Java, pour pouvoir continuer à l'utiliser. 
+
+Validation :
+N'étant que des éléments graphiques, nous ne pouvons pas tester ces derniers.
